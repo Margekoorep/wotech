@@ -34,3 +34,28 @@ public class Main {
 
   }
 }
+
+// 
+
+public class Main {
+  public static void main(String[] args)  {
+//main method  is unic and must be present in every java program, it is entry. Is automatacly run, other methods need to be called
+    int mainValue = 14;
+      System.out.println(mainValue);
+  firstMethod(); //method is called!
+  
+  }
+
+  public static void firstMethod(){
+  //method 1
+    secondMethod(); // because the firstM is already called you can call secondM in main or first
+    int firstValue = 50;
+    System.out.println(firstValue);
+  }
+
+  public static void secondMethod(){
+    //method 2
+    int secondValue = 120;
+    System.out.println(secondValue);
+  }
+}
