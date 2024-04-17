@@ -1,4 +1,20 @@
 // My fisrt method
+
+// think through your work 
+
+// padding 3 characters long on one side
+// Border is 1 character long on one side 
+// "Word"lenght 
+// 1. user writes string, any lenght
+//2. calculate the wiidth of the word 
+// 2.1 how long word 
+// 2.2 sum of messagelenght and padding and border 
+// 3. print out upper border 
+// 4. print out empty line with border
+// 5. porder + padding+ word+ text + padding + border
+// 6. print out empty line with border
+// 7. print out lower border
+
 import java.util.Scanner;
 
 public class Main {
