@@ -26,3 +26,35 @@ public class Main {
 
 
 //Challenging -> Find the largest number in the array and find the smallest number in the array
+// 1. input a array
+// 2. find the largest number in the array
+// 3. Find the smallest number in the array
+
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int[] arr = new int[5];
+    System.out.print("Enter 5 numbers: ");
+    for(int i = 0; i < arr.length; i++){ 
+      arr[i] = scanner.nextInt();
+    }
+    
+    int maxNumber = arr[0];
+     for (int i = 0; i < arr.length; i++)
+      if (arr[i] > maxNumber) {
+        maxNumber = arr[i];     
+    }
+    System.out.println("The largest number is: " + maxNumber);
+
+    int minNumber = arr[0];
+    for (int i = 0; i < arr.length; i++)
+      if (arr[i] < minNumber){
+        minNumber = arr[i];
+      }
+    System.out.println("Smallest number is:" + minNumber);
+    
+     scanner.close();
+  }
+}
