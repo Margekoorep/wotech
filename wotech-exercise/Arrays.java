@@ -58,3 +58,62 @@ public class Main {
      scanner.close();
   }
 }
+
+
+// ChatGTP exercises
+
+//program that checks if an array of integers is sorted in ascending order? :
+
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int[] arr = new int[5];
+    System.out.print("Enter 5 numbers: ");
+    for(int i = 0; i < arr.length; i++){ 
+      arr[i] = scanner.nextInt();
+    }
+    boolean isSorted = true;
+  
+    for (int i = 0; i < arr.length-1; i++){
+      if (arr[i] > arr[i+1]){
+     isSorted = false;
+        break;
+      }
+    }
+   if  (isSorted){
+     System.out.println ("The array is in ascending order");
+   } else{ 
+  System.out.println ("The array is not in ascending order");
+
+}
+    
+     scanner.close();
+  }
+}
+
+
+// a program that calculates the sum and average of elements in an array of integers? 
+
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+
+    int[] arr = new int[5];
+    System.out.print("Enter 5 numbers: ");
+    for(int i = 0; i < arr.length; i++){ 
+      arr[i] = scanner.nextInt();
+    }
+
+    var sumOfArray = 0;
+    for (int i = 0; i < arr.length; i++) {
+      sumOfArray += arr[i];
+    }
+    System.out.println("The sum of array is: " + sumOfArray);
+    var averageOfArray = (double) sumOfArray / arr.length;
+    System.out.println("The average of array is: " + averageOfArray);
+     scanner.close();
+  }
+}
