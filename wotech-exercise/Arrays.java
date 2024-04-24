@@ -198,6 +198,7 @@ public class Main {
         if (arr[i].equals(name)) {
           nameIsInList = true;
           System.out.println(name + " is in the party list");
+         break;
         }  
       }
     if (!nameIsInList){
