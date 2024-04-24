@@ -182,6 +182,30 @@ public class Main {
   }
 }
 
+// Shorter version of previous exercise: 
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    
+
+    String[] arr ={"Oskars", "Anna", "Andris"};
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a name: ");
+    String name = scanner.nextLine();
+    
+      Boolean nameIsInList = false;
+      for (int i = 0; i < arr.length; i++) {
+        if (arr[i].equals(name)) {
+          nameIsInList = true;
+          System.out.println(name + " is in the party list");
+        }  
+      }
+    if (!nameIsInList){
+    System.out.println(name + " is not in the party list");
+     }
+    
+  }
+    }
 
  /*
 Given an array of integers, write a Java program to find the maximum sum of two integers in the array.
