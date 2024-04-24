@@ -41,4 +41,42 @@ public class Main {
  
   
     }
+
+
+//____________________________________________________
+/*
+  Write a name and check whether or not it is atleast 3 char long
+   Write a surname and check whether or not it is atleast 3 char long
+If it's not, then say. Sorry, your name is too short.
+If both of them are valid, say. Thank you, your information has been registered!
+*/
+
+public class Main{
+  public static void main(String[] args){
+
+    String name = "a";
+    String surname = "Klaumanis";
+    boolean isUserNameValid = isNameValid(name); // Give the function "Oskars" as an argument
+    //Because Oskars is longer than 3, isUserNameValid = true
+    
+    boolean isUserSurnameValid = isNameValid(surname); // Give the function "Klaumanis" as an argument
+    //Because Klaumanis is longer than 3, isUserSurnameValid = true
+
+    if(isUserNameValid && isUserSurnameValid){
+      System.out.println("Thank you, your information has been registered!");
+    } else {
+      System.out.println("Sorry, your check your information");
+    }
+    
+  }
+
+  public static boolean isNameValid(String name){ //name == "Klaumanis"
+    if(name.length() < 3){ //Checking whether or not "Klaumanis" length is less than 3
+      System.out.println("Sorry, your name is too short.");
+      return false;
+    }
+
+    return true; //Because "Klaumanis" length is more than 3, we return true
+  }
+}
  
