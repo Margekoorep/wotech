@@ -184,4 +184,48 @@ public class Main {
     return a+b;
   }
 }
+
+###//___________________________________
+
+/*
+Hard:
+1. Fill the party list with people you would like to invite to the party.
+Check whether or not "Anna" is in the array.
+Check whether or not "Maris" is in the array.
+["Oskars", "Anna", "Andris"]
+Result: 
+"Anna is in the party list"
+"Maris is not in the party list"
+
+*/
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+
+
+    String[] arr ={"Oskars", "Anna", "Andris"};
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a name: ");
+    String enteredName = scanner.nextLine();
+
+    String result = name(enteredName, arr);
+    System.out.println(result);
+  
+  }
+  public static String name (String name, String[] arr){
+    Boolean nameIsInList = false;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i].equals(name)) {
+        nameIsInList = true;
+        break;
+      }
+    }
+      if (nameIsInList) {
+        return name + " is in the party list";
+      } else {
+        return name + " is not in the party list";
+      }
+  }
+    }
  
