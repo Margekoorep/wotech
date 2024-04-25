@@ -149,3 +149,86 @@ public class Main {
     System.out.println("");
   }
 }
+
+//____________________________________________--
+
+/*
+Hard:
+1. Fill the party list with people you would like to invite to the party.
+Check whether or not "Anna" is in the array.
+Check whether or not "Maris" is in the array.
+["Oskars", "Anna", "Andris"]
+Result: 
+"Anna is in the party list"
+"Maris is not in the party list"
+
+*/
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+
+
+    String[] arr ={"Oskars", "Anna", "Andris"};
+    
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter a name: ");
+    String enteredName = scanner.nextLine();
+
+    String result = name(enteredName, arr);
+    System.out.println(result);
+  
+  }
+  public static String name (String name, String[] arr){
+    Boolean nameIsInList = false;
+    for (int i = 0; i < arr.length; i++) {
+      if (arr[i].equals(name)) {
+        nameIsInList = true;
+        break;
+      }
+    }
+      if (nameIsInList) {
+        return name + " is in the party list";
+      } else {
+        return name + " is not in the party list";
+      }
+  }
+    }
+ //____________________________________________________-
+
+/*
+medium:
+1. Parent simulator, a user provides a number (average grade) to the program, and if it's above 8, then parents go hooray, else they go sad
+
+User creates 3 functions
+    1. Function called hooraay(), is a void, and returns nothing. It's only job is to print out "Hooraay" in the console
+    2. Function called sad(), is a void, and returns nothing. It's only job is to print out "Sad" in the console
+    2. Function is called CheckGrades and receives int as value, but returns nothing. It's job is to call hooray() function, if the grade that it received is above 8, and call sad() function, if the grades received is less than 8
+
+*/
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Enter the avarage grade: ");
+    Scanner scanner = new Scanner(System.in);
+    int avarageGrade = scanner.nextInt();
+    scanner.close();
+    
+    checkGrades(avarageGrade);
+  }
+ 
+  public static void checkGrades(int grade){
+    if (grade > 8){
+      hooraay();
+    }else{
+      sad();
+    }
+    return;
+  }
+  
+  public static void  hooraay(){
+    System.out.println("Hooraay!");
+  }
+  public static void sad(){
+    System.out.println("Sad!");
+  }
+}
