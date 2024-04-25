@@ -232,3 +232,43 @@ public class Main {
     System.out.println("Sad!");
   }
 }
+
+//_______________________________________________
+//EASY 
+
+/*1. Create a function that returns smallest number of 2 numbers.
+
+For example:
+User provides 5
+User provides 7
+
+Function returns 5
+Main function prints out:
+5 is the smallest number
+  */
+import java.util.Scanner; 
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Enter the first number: ");
+    int nuber1 = getNumber();
+    System.out.println("Enter the second number: ");
+    int number2 = getNumber();
+    int result = getSmallestNumber(nuber1, number2);
+    System.out.println(result + " is the smaller number.");
+  }
+
+  public static int getNumber(){
+    Scanner scanner = new Scanner(System.in);
+    int number = scanner.nextInt();
+    return number;
+  }
+  public static int getSmallestNumber(int number1, int number2){
+    if(number1 < number2){
+      return number1;
+    }
+    else{
+      return number2;
+    }
+  }
+  
+}
