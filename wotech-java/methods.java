@@ -79,4 +79,109 @@ public class Main{
     return true; //Because "Klaumanis" length is more than 3, we return true
   }
 }
+
+//________________________________________________________
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    
+    int number = 51;
+    checkNumber(number);
+    int number2 = 49;
+    checkNumber(number2);
+/* We get the number
+    We check whether or not it is bigger than 50
+    We check whether or not it is smaller than 50
+    We assume it is equal to 50 if all of the upper conditions are false
+    */
+    
+  }
+  public static void checkNumber(int number){
+    if (number > 50){
+       System.out.println(number + " is greater than 50");
+
+     }else if (number < 50){
+       System.out.println(number + " is less than 50");
+     }else{
+       System.out.println(number + " is equal to 50");
+    }
+  }
+
+  
+}
+  
+ //______________________________________________________
+//RETURN:
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+    
+    int number = 51;
+     String result = checkNumber(number);
+    System.out.println(result);
+    
+    int number2 = 49;
+    
+    result = checkNumber(number2);
+    System.out.println(result);
+
+    
+  }
+  
+  public static String checkNumber(int number){
+    if (number > 50){
+       return number + " is greater than 50";
+
+     }else if (number < 50){
+       return  number + " is less than 50";
+     }else{
+       return number + " is equal to 50";
+    }
+  }
+
+}
+
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+
+    int money = 15;
+    String result = buyJeans(money);
+    System.out.println(result);
+    
+  }
+ 
+public static String buyJeans(int money){
+  int price = 30
+  if(money > price){
+    return "Person can buy jeans";
+  }else{
+    return "Person cannot buy jeans";
+  }
+}
+  
+}
+
+//_____________________________-
+import java.util.Scanner;
+public class Main {
+  public static void main(String[] args) {
+
+// 7, 12,18 
+// fint sum all together
+
+    int number1 = 7;
+    int number2 = 12;
+    int number3= 18;
+
+    int result = sum (number1, number2);
+    int finalResult = sum (result, number3);
+    System.out.println(finalResult);
+}
+  public static int sum(int a, int b){
+    return a+b;
+  }
+}
  
