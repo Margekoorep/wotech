@@ -89,7 +89,7 @@ _____________________________________________________-
   }
 }
 
-    /* when creating 2 arrays they are not same. When we int [] array2 = arrayVoid; they are same. 
+    /* when creating 2 arrays they are not same. Untill when we int [] array2 = arrayVoid; they are same. 
       like 2 napkins they are 2 different things but their values are same. 
       Like there can be 2 Mari Mets but they are not same person. 
       They can have same hair or eyes but they are not same. Reference tyes:  if we change of an arry in method
