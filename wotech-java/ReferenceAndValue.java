@@ -1,3 +1,6 @@
+//all primitives + strings are value types!
+
+
 
 import java.util.Scanner;
 public class Main {
