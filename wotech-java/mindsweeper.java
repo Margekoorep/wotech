@@ -10,7 +10,7 @@ public class Main {
     // 1  1 1
     //  0 0 0 0 0 0 0 0 0  jne
 
-    //MINDSWEEPER:
+    //MINDSWEEPER: the sides of the girds need a if contition for it to work.
     grid[bombRow][bombColumn] = 5; // Center
     if (bombRow != 0){
     grid[bombRow - 1][bombColumn] = 1; // Top middle
