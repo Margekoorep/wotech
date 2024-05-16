@@ -3,8 +3,8 @@ public class Main {
   public static void main(String[] args) {
     int size = 10;
     int [][] grid = new int [size][size];
-    int bombColumn = 1;
-    int bombRow = 1;
+    int bombColumn = 9;
+    int bombRow = 9;
     // 1 1  1 0 0 0 0 0 0 0
     // 1 -1 1 0 0 0 0 0 jne
     // 1  1 1
@@ -12,16 +12,30 @@ public class Main {
 
     //MINDSWEEPER:
     grid[bombRow][bombColumn] = 5; // Center
+    if (bombRow != 0){
     grid[bombRow - 1][bombColumn] = 1; // Top middle
+      if(bombColumn != 0){
     grid[bombRow - 1][bombColumn - 1] = 1; // top left
+      }
+      if (bombColumn != size - 1){
     grid[bombRow - 1][bombColumn + 1] = 1; // top right
-
+      }
+    }
+    if (bombRow != size - 1){
     grid[bombRow + 1][bombColumn] = 1; // bottom middle
+      if(bombColumn != 0){
     grid[bombRow + 1][bombColumn - 1] = 1; //bottom left
+      }
+      if (bombColumn != size - 1){
     grid[bombRow + 1][bombColumn + 1] = 1; //bottom right
-
+      }
+    }
+    if(bombColumn != 0) {
     grid[bombRow][bombColumn - 1] = 1; // middle left
+    }
+    if (bombColumn != size - 1){
     grid[bombRow][bombColumn + 1] = 1; //middle right
+    }
     
     printArray(grid, size);
 
