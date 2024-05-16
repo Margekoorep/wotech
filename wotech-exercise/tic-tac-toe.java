@@ -23,12 +23,14 @@ If all elements in row contain 1, then let player know they won.*/
     int row = myObj.nextInt(); 
     if(row == 3){
       row = row +1;
+    }else if [row = 1){
+      row = row -1;
     }
    
     System.out.println("Please choose a column: 1, 2 or 3:");
     int column = myObj.nextInt();
     if (column == 1){
-      column = column +1;
+      column = column -1;
     }else if (column == 3){
       column = column +1;
     }
