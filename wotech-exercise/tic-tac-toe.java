@@ -38,14 +38,7 @@ If all elements in row contain 1, then let player know they won.*/
 
     
     playField[row][column]= "X";
-    for(int i = 0; i < playField.length; i++){
-      for(int j = 0; j < playField[i].length; j++){
-      
-
-    System.out.print(playField[i][j] + " ");
-      }
-      System.out.println();
-    }
+    printArray(playField);
     
  
 }
@@ -55,6 +48,15 @@ If all elements in row contain 1, then let player know they won.*/
     System.out.println("Please choose a column: 1, 2 or 3:");
     Scanner column = new Scanner(System.in);
   }
+  public static void printArray(int array[][]){
+    for(int i = 0; i < playField.length; i++){
+      for(int j = 0; j < playField[i].length; j++){
+      
+
+    System.out.print(playField[i][j] + " ");
+      }
+      System.out.println();
+    }
 }
 
 
