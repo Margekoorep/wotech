@@ -28,3 +28,36 @@ public class Main {
 _______________________________________
  /* Medium: Medium: Create an integer ArrayList,
  make sure they divide by 2, skip the first 5, limit to three and print them out from another function.*/
+
+  import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.Random;
+public class Main {
+  public static void main(String[] args) {
+
+
+    var numbersList = new ArrayList<Integer>();
+      Random rand = new Random();
+      int counter = 0;
+    while (counter < 30){  //adding 30 random numbers to my list
+      int randNumber = rand.nextInt(101); // choosing from 0-100
+      counter = counter + 1;      
+      addNumber(numbersList, randNumber);
+    }
+
+    var filteredNumbers = numbersList
+    .stream()
+    .filter(x -> x % 2 == 0) // filtering out the ones that divide by 2
+    .skip(5) // skiping first 5 numbers
+    .limit(3) // limiting to 3 numbers
+    .collect(Collectors.toList()); // collecting to new list
+
+    System.out.println(filteredNumbers); // printing out the new list
+  }
+  
+  public static void addNumber(ArrayList<Integer> numbers, int number ){
+    numbers.add(number);  
+  }
+}
+
+
