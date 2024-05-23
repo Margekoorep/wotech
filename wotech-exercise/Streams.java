@@ -29,9 +29,10 @@ _______________________________________
  /* Medium: Medium: Create an integer ArrayList,
  make sure they divide by 2, skip the first 5, limit to three and print them out from another function.*/
 
-  import java.util.ArrayList;
+ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.Random;
+import java.util.List;
 public class Main {
   public static void main(String[] args) {
 
@@ -52,12 +53,13 @@ public class Main {
     .limit(3) // limiting to 3 numbers
     .collect(Collectors.toList()); // collecting to new list
 
-    System.out.println(filteredNumbers); // printing out the new list
+    printList(filteredNumbers); // printing out the new list
   }
   
   public static void addNumber(ArrayList<Integer> numbers, int number ){
     numbers.add(number);  
   }
+  public static void printList (List<Integer> numbers){
+    System.out.println(numbers);
+  }
 }
-
-
