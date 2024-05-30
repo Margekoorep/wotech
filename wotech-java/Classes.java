@@ -49,6 +49,43 @@ public class Main {
   }
 }
 
+// LESSON 2
+
+MAIN.JAVA
+
+    import java.util.ArrayList;
+import java.util.stream.Collectors;
+import java.util.Random;
+import java.util.List;
+
+public class Main {
+  public static void main(String[] args) {
+    Student.studentCount = 10;
+  
+    Student student = new Student();
+    student.name = "John";
+    Student student2 = new Student();
+
+    System.out.println(student2.name);
+    System.out.println(student.studentCount);
+    System.out.println(student2.studentCount);
+    System.out.println(Student.studentCount);
+   
+  }
+}
+
+
+STUDENT.JAVA
+
+    public class Student{
+  public static int studentCount = 0; // because it is static it is a global vareable that every one can use. and it belongs to the Student class. From now on don't use static :D 
+  public String name;
+  public int age;
+  
+  
+}
+
+
 
 
 
