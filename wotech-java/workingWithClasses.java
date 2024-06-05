@@ -2,6 +2,7 @@ Main.java --> // getting user input, sending this input to tsakmanager, show inf
 Taskmanager.java -->// add tasks to the list, mark them done and get list
 Task.java --> // template for task (name, description, date isItDone)
 // MVP : Minimal Viable Product
+   // encapsulation OOP
 
    
   // be able to add task
